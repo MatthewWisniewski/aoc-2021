@@ -6,10 +6,6 @@ function day_3_part_2(data :: Vector{String})
 
 end
 
-function getOxygenReading(data)
-
-end
-
 function parseForOxygenReading(data) 
     candidates = Vector{Bool}(undef, length(data))
 
