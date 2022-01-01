@@ -94,17 +94,5 @@ function countRemainingCandidates(candidates)
     return sum(map(x -> x ? 1 : 0, candidates))
 end
 
-function binaryArrayToInt(arr :: String)
-    total = 0
-    for i in range(1, length(arr))
-        if arr[i] == '0'
-            continue
-        else
-            total += 2 ^ (length(arr) - i)
-        end
-    end
-    return total
-end
-
 lines = readlines(open("day 3 input.txt"))
 println(day_3_part_2(lines))
